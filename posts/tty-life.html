@@ -1,52 +1,24 @@
-<!DOCTYPE html>
-<!-- saved from url=(0045)file:///home/yasoom/Documents/mike-index.html -->
-<html dir="" class="wf-opensans-n4-inactive wf-lora-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		
-		<title>plain-text</title>
-			
-		<link rel="next" href="file:///page/2">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<meta name="description" content="My blog">
-		
-		<meta itemprop="name" content="plain-text">
-		<meta itemprop="description" content="my blog">
-		<meta property="og:title" content="plain-text">
-		<meta property="og:site_name" content="plain-text">
-		<meta property="og:type" content="article">
-		<meta property="og:url" content="https://yasoomn.github.io/plain-text/">
-		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css">		
-
-	</head>
-	<body id="collection" itemscope="" itemtype="http://schema.org/WebPage">		
-		<header>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="WordGrinder 0.7.2"/>
+<title>Living the tty life</title>
+<link rel="stylesheet" type="text/css" href="/style.css">
+</head><body>
+	<header>
 		<h1 dir="" id="blog-title"><a href="file:///" class="h-card p-author u-url" rel="me author">plain-text</a></h1>
 		<p id="blog-description">The 2020's blog</p>
 		
 		<nav>
-			<a class="pinned" href="aboutme.html">About Me</a>
+			<a href="/aboutme.html">About Me</a>
+			<a href="/index.html">Home</a>
 		</nav>
 		
-		</header>
-		
-		<section id="wrapper">
-
-			
-			
-
-			
-<article id="post-rxafmcpgk7hgkrpx" class="norm h-entry" itemscope="">
-	
-	<h2 class="post-title" itemprop="name"><a href="posts/tty-life.html" itemprop="url" class="u-url">Living the tty life</a>
-	</h2>
-	<time class="dt-published" datetime="2020-03-29 08:04:29 +0000 UTC" pubdate="" itemprop="datePublished" content="2020-03-29 08:04:29 +0000 UTC">March 29, 2020</time>
-<div lang="en" dir="auto" >
-	<p>Is it possible to do all of my tasks from the linux tty? Just how much of my workflow could be transplanted to a text-only interface? I decided to use this pandemic-vacation to find out. This is a post about how many surprisies the Linux command line has on it's sleeves.</p>
+	</header>
+<p>Is it possible to do all of my tasks from the linux tty? Just how much of my workflow could be transplanted to a text-only interface? I decided to use this pandemic-vacation to find out. This is a post about how many surprisies the Linux command line has on it's sleeves.</p>
 <p><b>Xorg, you shall not pass!</b></p>
 <p>Now that we have a black background with a blinking cursor, what do we do?</p>
 <code>$ vim Xworkflow.txt</code>
-<p>As a biology student those are the thinks I have to do on a daily basis:</p>
+<p>As a biology student this are the thinks I have to do on a daily basis:</p>
 <ul>
 	<li>Check the university web-portal for assignments and download the pdfs</li>
 	<li>a lot of web browsing for research and stuff. Also youtube, reddit, twitter, etc</li>
@@ -55,8 +27,6 @@
 	<li> Im not a professional Developer but do some stuff with javascript. Also as a Linux user i spend a lot of time openig up config files.</li>
 	<li>open a lot of pdfs and ebooks for studying, often I need to have several pdfs open at the same time.</li>
 	<li>Netflix/amazon prime</li>
-</ul>
-<code>$ vim ttyWorflow.txt</code>
 <p>Lets begin with the easy stuff: Goodbye touchscreen. Touch events are handled directly by Wayland or X11, so no.</p>
 <p>Next the things I knew would work very well: there are a lot of cli programs for linux and discovering them is a joy, `ncspot`for instance is an amazing spotify client. Text editing is a nobrainer for the tty, and learning the vim workflow is a must-have if you are thinking on living the Terminal life. But not everything is made of hjkl, `wordgrinder`is a word processor that does the job and gets out of your way. It has a menu system and can read odt files (some professors think it's okay to upload the class notes in Word format). I wrote this simple web page in vim, but had to use a normal web browser to see the css.</p>
 <p>Some window management is needed for all this programs, and tmux it was, easy to use and very customizable it was a central pillar of my setup. Other than tweaking some keybidings the only customization I did was installing a pluggin to show the battery percentage and one for showing a Nerwork managaer window. </p>
@@ -77,14 +47,5 @@
 <p>This experiment made me learn a lot about the shell we all live in and how things interact with one another in Linux. This modularity is what makes cli programs so great: you are free to make them work together to do new things or adapt them to function on a new context.</p>
 <p>* for pdfs you need to use the fimgs wrapper that is included in the fim package</p>
 <p>** you need to add yourself to the video group for that to work</p>
-</div></article>
-
-		<nav id="paging" class="content-container clearfix">
-				<!---<a href="file:///page/2">⇠ Older</a>--->
-		</nav>
-		</section>
-
-		<footer>
-		</footer>
 </body>
 </html>

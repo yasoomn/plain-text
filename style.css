@@ -75,4 +75,6 @@ article p {
 }
 a:hover, nav#full-nav .tabs a:hover {
     text-decoration: underline;
-}
+a:visited {
+  color: #656565;
+}}

@@ -1,22 +1,24 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html>
+<html class="wf-opensans-n4-inactive wf-lora-n4-active wf-active"><head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="generator" content="WordGrinder 0.7.2"/>
 <title>Living the tty life</title>
-<link rel="stylesheet" type="text/css" href="/plain-text/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://yasoomn.github.io/plain-text/style.css">
 </head><body>
 	<header>
-		<h1 dir="" id="blog-title"><a href="/plain-text/index.html" class="h-card p-author u-url" rel="me author">plain-text</a></h1>
+		<h1 dir="" id="blog-title"><a href="https://yasoomn.github.io/plain-text/index.html" class="h-card p-author u-url" rel="me author">plain-text</a></h1>
 		<p id="blog-description">The 2020's blog</p>
 		
 		<nav>
-			<a href="/plain-text/aboutme.html">About Me</a>
-			<a href="/plain-text/index.html">Home</a>
+			<a href="https://yasoomn.github.io/plain-text/aboutme.html">About Me</a>
+			<a href="https://yasoomn.github.io/plain-text/index.html">Home</a>
 		</nav>
 		
 	</header>
 	<section id="wrapper">
 		<article>
-			<h2 class="post-title" itemprop="name"><a href="posts/tty-life.html" itemprop="url" class="u-url">Living the tty life</a>
+			<h2 class="post-title" itemprop="name"><a href="https://yasoomn.github.io/plain-text/posts/tty-life.html" itemprop="url" class="u-url">Living the tty life</a>
 			</h2>
 			<time class="dt-published" datetime="2020-03-29 08:04:29 +0000 UTC" pubdate="" itemprop="datePublished" content="2020-03-29 08:04:29 +0000 UTC">March 29, 2020</time>
 		
@@ -35,16 +37,18 @@
 	<li>Netflix/amazon prime</li>
 </ul>
 <p>Lets begin with the easy stuff: Goodbye touchscreen. Touch events are handled directly by Wayland or X11, so no.</p>
-<p>Next the things I knew would work very well: there are a lot of cli programs for linux and discovering them is a joy, `ncspot`for instance is an amazing spotify client. Text editing is a nobrainer for the tty, and learning the vim workflow is a must-have if you are thinking on living the Terminal life. But not everything is made of hjkl, `wordgrinder`is a word processor that does the job and gets out of your way. It has a menu system and can read odt files (some professors think it's okay to upload the class notes in Word format). I wrote this simple web page in vim, but had to use a normal web browser to see the css.</p>
-<p>Some window management is needed for all this programs, and tmux it was, easy to use and very customizable it was a central pillar of my setup. Other than tweaking some keybidings the only customization I did was installing a pluggin to show the battery percentage and one for showing a Nerwork managaer window. </p>
+<p>Next the things I knew would work very well: there are a lot of cli programs for linux and discovering them is a joy, `ncspot`for instance is an amazing spotify client. Text editing is a nobrainer for the tty, and learning the vim workflow is a must-have if you are thinking on living the Terminal life. But not everything is made of hjkl, <a href="http://cowlark.com/wordgrinder/index.html" >wordgrinder</a> is a word processor that does the job and gets out of your way. It has a menu system and can read odt files (some professors think it's okay to upload the class notes in Word format). I wrote this simple web page in vim, but had to use a normal web browser to see the css.</p>
+<p>Some window management is needed for all this programs, and <a href="https://github.com/tmux/tmux" >tmux</a> it was, easy to use and very customizable it was a central pillar of my setup. Other than tweaking some keybidings the only customization I did was installing a <a href="https://github.com/tmux-plugins/tmux-battery">pluggin</a> to show the battery percentage and <a href="https://github.com/c3r34lk1ll3r/tmux-networkmanager">one</a> for showing a Nerwork managaer window. </p>
+<img src="file:///home/yasoom/Documents/plain-text/posts/print.png" alt="tty tmux" align="middle" style="width: 100%;">
 <p>For email I used neomutt, it does what it is supposed to and is very confugurable, as cli programs should be.</p>
-<p>now the part that doesn't work as well: web browsing. Now Luke Smith was very right when he said "the web nowadays is so bloated you need a bloated browser", we of course have text based alternatives like elinks and w3m (poor things, they don't stand a chance agaist the modern web) and I was able to do way more with them than I expected, but at the end of the day some websites are unusable without css and javascript (my university portal for example). Seeing a text only web is a nice experience though, the sites that did work were very enjoyable to read in the tty (try reading this blog post), and I even managed to display images on full resolution! Yes, on the tty. </p>
+<p>now the part that doesn't work as well: web browsing. Luke Smith was very right when he said "the web nowadays is so bloated you need a bloated browser", we of course have text based alternatives like elinks and w3m (poor things, they don't stand a chance agaist the modern web) and I was able to do way more with them than I expected, but at the end of the day some websites are unusable without css and javascript (my university portal for example). Seeing a text only web is a nice experience though, the sites that did work were very enjoyable to read in the tty (try reading this blog post), and I even managed to display images on full resolution! Yes, on the tty. </p>
+<img src="file:///home/yasoom/Documents/plain-text/posts/print2.png" alt="tty tuir" align="middle" style="width: 100%;">
 <h3>Media:</h3>
-<p>So it is possible to display iamges and video on the tty, eliks can open links using external programs, if you configure it to open jpgs and pngs with <i>fim</i> </p>
+<p>So it is possible to display iamges and video on the tty, eliks can open links using external programs, if you configure it to open jpgs and pngs with <a href="https://www.nongnu.org/fbi-improved/">fim</a></p>
 <p><code>set mime.handler.image_viewer.unix-xwin.program = "fim %"</code></p>
 <p><code>set mime.handler.image_viewer.unix.program = "fim %"</code></p>
-<p>it will magicaly open the file fullscreen using the <i>linux framebuffer*.</i> fim can open pdfs** as well. The downside is it opens everything fullscreen and you cant really multitask while using it, so no multiple pdfs at once for me.</p>
-<p>Browsing websites on the tty suck, but in some cases you don't have to: <i>tuir</i> is a cli reddit client that works very well. You can use fim to display images and mpv to display video. Fullscreen full resolution video from reddit in the tty, isn't it amazing?</p>
+<p>it will magicaly open the file fullscreen using the <b>linux framebuffer</b>*. fim can open pdfs** as well. The downside is it opens everything fullscreen and you can't really multitask while using it, so no multiple pdfs at once for me.</p>
+<p>Browsing websites on the tty sucks, but in some cases you don't have to: <a href="https://gitlab.com/armandg1/tuir">tuir</a> is a cli reddit client that works very well. You can use fim to display images and mpv to display video. Fullscreen full resolution video from reddit in the tty, isn't it amazing?</p>
 <p><code>image/*; curl -s '%s' | convert - jpg:/tmp/rtv.jpg &amp;&amp; fim /tmp/rtv.jpg; needsterminal; copiousoutput</code></p>
 <p><code>video/*; mpv --vo=drm -quiet '%s'; needsterminal</code></p>
 <p>I couldn't find a workinkg youtube client for the terminal, the closest I got was using <i>newsboat</i> to subscribe to a chennel's rss, which works fine.</p>
@@ -52,8 +56,8 @@
 <h3> Conclusion</h3>
 <p>I did't expect to be able to move my entire workflow to the tty, I was, however, very impressed with just how much of it worked out. Browsing reddit and multitasking with tmux while listening to music in the background made me fell like I was in a desktop environment like any other.</p>
 <p>This experiment made me learn a lot about the shell we all live in and how things interact with one another in Linux. This modularity is what makes cli programs so great: you are free to make them work together to do new things or adapt them to function on a new context.</p>
-<p>* for pdfs you need to use the fimgs wrapper that is included in the fim package</p>
-<p>** you need to add yourself to the video group for that to work</p>
+<p>* you need to add yourself to the video group for that to work</p>
+<p>** for pdfs you need to use the fimgs wrapper that is included in the fim package</p>
 </article>
 </section>
 </body>

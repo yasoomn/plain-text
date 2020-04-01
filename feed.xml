@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:flickr="http://flickr.com/services/feeds/">
+	<channel>
+		<title>plain-text</title>
+		<link>https://yasoomn.github.io/plain-text/</link>
+		<description>Ny blog about Linux</description>
+		<pubDate>Thu, 1 Apr 2020 17:03:32 -0000</pubDate>
+		<lastBuildDate>Thu, 1 Apr 2020 17:03:32 -0000</lastBuildDate>
+		<generator>http://www.github.com/</generator>
+		<item>
+			<title>Living the TTY Life</title>
+			<link>https://yasoomn.github.io/plain-text/posts/tty-life.html</link>
+			<description>
+				<p>Is it possible to do all of my tasks from the linux tty? Just how much of my workflow could be transplanted to a text-only interface? I decided to use this pandemic-vacation to find out. This is a post about how many surprisies the Linux command line has in it's sleeves.
+				</p>
+			 	<p>
+					<a href="https://yasoomn.github.io/plain-text/posts/tty-life.html" title="Living the tty Life">
+						<img src="https://yasoomn.github.io/plain-text/posts/print.png" width="180" height="240" alt="tty" />
+					</a>
+				</p>
+		 	</description>
+			<pubDate>Thu, 1 Apr 2020 17:03:32 -0000</pubDate>
+		</item>
+	</channel>
+</rss>
